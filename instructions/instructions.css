@@ -1,0 +1,158 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cabin&family=DM+Sans:opsz@9..40&family=Exo+2&family=Fascinate&family=Fredoka&family=Montserrat&family=Poppins:wght@200;400&family=Preahvihear&family=Work+Sans&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;;
+}
+
+.logo {
+    width: 100%;
+    height:auto;
+    background-size: cover;
+    position:fixed;
+    z-index: 1;
+    
+}
+
+.wood {
+    width: 70%;
+    height: 68%;
+    cursor: pointer;
+    position:fixed;
+    z-index: 2;
+    top:100px;
+    left:250px;
+    transition: transform 0.3s ease; 
+    
+}
+.wood:hover{
+    transform: scale(1.1);
+}
+.instructions{
+    position:absolute;
+    top:220px;
+    left:350px;
+    z-index: 3;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin:50px;
+    padding: 50px;
+    font-size: 1.56rem;
+    
+    font-weight:lighter;
+    color: blanchedalmond;
+}
+.headinginstruction{
+    position:absolute;
+    top:150px;
+    left:480px;
+    z-index: 3;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin:50px;
+    padding: 50px;
+    font-size: 3rem;
+    color: 	#EADDCA;
+    font-weight:700;
+}
+
+@keyframes slideInTop {
+    from{
+        transform: translateY(-300px);
+
+    }
+    to{
+        transform: translateY(0);
+ 
+    }
+    
+}
+
+.headinginstruction{
+    animation-name:slideInTop;
+    animation-duration:1s;
+    animation-timing-function:ease-in;
+    animation-delay:0s;
+    animation-iteration-count:1;
+    animation-direction:normal;
+    animation-fill-mode:none;
+
+    
+}
+
+.instructions{
+    animation-name:slideInTop;
+    animation-duration:1s;
+    animation-timing-function:ease-in;
+    animation-delay:0s;
+    animation-iteration-count:1;
+    animation-direction:normal;
+    animation-fill-mode:none;
+
+    
+}
+
+/* Style for the container */
+.level-container {
+    display: flex;
+    justify-content: center; /* Adjust as needed to position the images */
+    
+    height: 100vh; /* Adjust the height as needed */
+    background-image: url('../images/Group\ 16.png'); /* Replace with the path to your background image */
+    background-size: cover;
+    background-position: center;
+  }
+  
+  /* Style for each level image */
+.level {
+    width: 200px; /* Adjust as needed for the desired size */
+    height: auto;
+    
+    margin: 680px 0 0 0px; /* Adjust the margin as needed (top right bottom left) */
+    transition: transform 0.3s ease;
+   
+  }
+  
+.level:hover{
+    transform: scale(1.1);
+}  
+
+
+@media (max-width: 768px) {
+    
+    .instructions{
+     
+        font-size: 0.8rem;
+        font-weight: lighter;
+        left:10px;
+        top:100px;
+        text-align: center;
+        color: antiquewhite;
+
+    }
+    .headinginstruction{
+        font-size: 1.5rem;
+        left:20%;
+        top:10%;
+        font-weight: bolder;
+        padding: 0;
+        
+        
+
+    }
+    .wood{
+        display: none;
+        
+    }
+    .level{
+        width: 100px; /* Adjust as needed for the desired size */
+        height: auto;
+        
+
+    }
+
+}

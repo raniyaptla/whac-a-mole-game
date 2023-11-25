@@ -1,0 +1,107 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cabin&family=DM+Sans:opsz@9..40&family=Exo+2&family=Fascinate&family=Fredoka&family=Montserrat&family=Poppins:wght@200;400&family=Preahvihear&family=Work+Sans&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;;
+}
+
+.logo {
+    width: 100%;
+    height:auto;
+    background-size: cover;
+    position:fixed;
+    z-index: 1;
+    
+}
+
+
+.whacamole{
+    width:auto;
+    height: auto;
+    
+    position: absolute;
+    z-index: 2;
+    top:150px;
+    left:330px;
+    animation: anime .5s linear forwards,floating ease 4s infinite;
+    
+}
+
+.play {
+    width: 180px;
+    cursor: pointer;
+    position: absolute;
+    z-index: 2;
+    top:550px;
+    left:650px;
+    transition: transform 0.3s ease; 
+
+    
+   
+}
+.play:hover{
+    transform: scale(1.1);
+}
+
+@keyframes anime {
+    from{
+        opacity: 0;
+        transform: translateY(-20px);
+
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+ 
+    }
+}
+
+@keyframes floating {
+    0% {
+        transform: translateY(0);
+    }
+    25% {
+        transform: translateY(-15%);
+    }
+    50% {
+        transform: translateY(0);
+    }
+    75% {
+        transform: translateY(15%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+
+ 
+
+    
+@media (max-width: 600px) {
+    .whacamole {
+        width: 90%; /* Adjust as needed */
+        top:250px;
+        left:27px;
+        
+    }
+
+    .play {
+        left: 30%; /* Adjust as needed */
+        transform: translateZ(-30%);
+    }
+
+
+    .logo {
+        height: 100vh;
+         /* Adjust as needed */
+         object-fit: cover;
+         overflow: hidden;
+    }
+}
+
+    
+   

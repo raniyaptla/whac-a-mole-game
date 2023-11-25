@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Whac-a-mole</title>
+    <link rel="stylesheet" href="../instructions/instructions.css" />
+  </head>
+
+  <body class="game-cover flex-centered">
+    
+    <div id="wood-container">
+     <img
+      class="wood"
+      src="../images/woodenboard.png"
+      alt="wood-button" />
+
+     <h2 class="headinginstruction">INSTRUCTIONS</h2>
+     <p class="instructions">
+      Grab the mallet to "whack" or hit the toy moles.
+      <br>
+      Moles will randomly pop up from these holes.
+      <br>
+      Quickly hit the mole as it appears. 
+      <br><br>
+      The goal is to score more than 100 in a certain time limit.
+      <br>
+      Each successful hit earns the player points. 
+      <br>
+      Some moles might give you more points than others.
+      <br>
+      
+      The game ends when the time limit expires.</p>
+    </div>
+
+    <div class="level-container">
+      <a target="_self" href="../game1/game1.html"><img class="level" src="../images/level1.png" alt="level1"></a>
+      <a target="_self" href="../game2/game2.html"><img class="level" src="../images/level2.png" alt="level2"></a>
+      <a target="_self" href="../game3/game3.html"><img class="level" src="../images/level3.png" alt="level3"></a>
+    </div>
+    
+
+
+  <script>
+    const levelpassedSound = new Audio('../sound/instructions.mp3');
+    levelpassedSound.play();
+  </script>
+  
+    
+  </body>
+</html>

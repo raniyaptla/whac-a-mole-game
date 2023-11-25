@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin&family=DM+Sans:opsz@9..40&family=Exo+2&family=Fascinate&family=Fredoka&family=Montserrat&family=Poppins:wght@200;400&family=Preahvihear&family=Work+Sans&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+body{
+    background: url('../images/Group\ 17.png') center/cover no-repeat;   
+    height: 100vh;
+    overflow: hidden;
+}
+
+
+
+#game-over-text{
+    width: 20%;
+    height: auto;
+    position: absolute;
+    /* z-index: 2; */
+    top: 80px;
+    left: 590px;
+    animation: zoomInOut 3s infinite;
+}
+
+
+
+@keyframes zoomInOut {
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.2);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+}
+
+
+#play-again-button{
+    
+   position: absolute;
+   top:550px;
+   left: 660px;
+   height: 18%;
+   width: 10%;
+   animation: scorebump 3s infinite;
+  
+   
+
+}
+
+#score-box{
+    color: beige;
+    border: 1px solid rgba(245, 245, 220, 0.683);
+    width: 22%;
+    position: absolute;
+    top: 450px;
+    left: 590px;
+    font-size: 3rem;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+   
+
+}
+
+@keyframes scorebump{
+    from{
+        transform: translateY(10px);
+    }
+    to{
+        transform: translateY(-10px);
+    }
+
+    
+}
+
+
+#message-box{
+    color: beige;
+    /* border: 3px solid beige; */
+    width: 100%;
+    position: absolute;
+    top:320px;
+    font-size: 3rem;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    animation: zoomInOut 3s infinite;
+
+    
+
+}
+
+
+@keyframes slideInTop {
+    from{
+        transform: translateY(-300px);
+
+    }
+    to{
+        transform: translateY(0);
+ 
+    }
+    
+}
+
+
+#game-over-text{
+    
+    animation-name:slideInTop;
+    animation-duration:1s;
+    animation-timing-function:ease-in;
+    animation-delay:0s;
+    animation-iteration-count:1;
+    animation-direction:normal;
+    animation-fill-mode:none;
+
+    
+}
+
+
+.home{
+    position: absolute;
+    top:50px;
+    left: 1320px;
+    width: 8%;
+    
+
+}
+
+
+
+
+/* Media Query for smaller screens */
+@media (max-width: 768px) {
+    #game-over-text,
+    #play-again-button,
+    #score-box,
+    #message-box {
+        width: 60%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    #game-over-text {
+        top: 10%;
+        animation: none; 
+
+    }
+    
+
+    #score-box {
+        top: 60%;
+    }
+
+    #message-box {
+        top: 40%;
+        left:20%;
+        font-size: 1.5rem;
+    }
+
+    .home{
+        top: 2%;
+        width: 20%;
+        left: 3%;
+        animation: none;
+    
+    }
+    
+    #play-again-button {
+        top: 3%;
+        height: 8%;
+        width: 22%;
+        left:85%;
+        animation:none;
+
+        
+    }
+
+}

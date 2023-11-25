@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin&family=DM+Sans:opsz@9..40&family=Exo+2&family=Fascinate&family=Fredoka&family=Montserrat&family=Poppins:wght@200;400&family=Preahvihear&family=Work+Sans&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+body {
+    
+    height: 100vh;
+    overflow: hidden;
+    
+    cursor: none;
+    background: url('../images/Group 15.png') center/cover no-repeat fixed;   
+    
+    
+
+    
+}
+
+h1{
+    color: bisque;
+}
+ 
+#whac{
+    position: absolute;
+    z-index:1000;
+    height: 125px;
+    top:0;
+    left:0;
+    /* transform: translate(10px,-40px); */
+    /* cursor: pointer; */
+
+} 
+
+.score-mole{
+    width:50px;
+    height:50px;
+    z-index:1;
+    position: relative;
+    top:10px;
+    
+}
+ul{
+    display: flex;
+    gap:10px;
+    justify-content: space-between;
+    list-style-type: none;
+    
+}
+.score{
+    display: flex;
+    height: 100px;
+    width: 100px;
+}
+
+.level1{
+   position: absolute;
+   top: 180px;
+   left: 1310px;
+   color: #EADDCA;
+   font-size: 2rem;
+   font-weight: bold;
+   text-align: center;
+
+}
+
+.flex{
+    display: flex;
+}
+
+.game-display{
+    justify-content:space-between;
+    align-items: center; 
+    height: 100vh;
+    width: 100vw;
+}
+
+.container,.game-display, #result{
+    flex-direction: column;
+    width:250px;
+    
+}
+
+.game-container{
+    position: relative;
+    top:190px;
+    left:300px;
+    position: fixed;
+}
+
+
+#timer {
+    width: 10%;
+    position: absolute;
+    top: 5vh;
+    right: 5vh;
+    font-size: 6vw;
+    border: 3px solid #EADDCA;
+    border-radius: 3px;
+    text-align: center;
+    color: bisque;
+   
+}
+
+h3 {
+    /* display: inline-block; */
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:40px;
+    left:600px;
+    font-size: 2rem;
+    color: #EADDCA;
+   
+  }
+  
+
+.mole{
+    
+    width: 100%;
+    height: 100%;
+    z-index:-1;
+    
+}
+.hole{
+    /* position: fixed; */
+    width: 100%;
+    height: 100%;
+    z-index:1;
+    justify-content: space-around;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+
+@keyframes scorebump{
+    from{
+        transform: translateY(10px);
+    }
+    to{
+        transform: translateY(-10px);
+    }
+
+    
+}
+.box{
+     height: 200px;
+     width: 200px;
+     /* background-color: red; */
+     margin-bottom: 10px;
+     display: grid;
+     grid-template-rows: 60% 40%;
+   
+}
+
+.mole-hide {
+    opacity: 0;
+  } 
+
+
+.scoremole{
+    
+    width: 80%;
+    height: 80%;
+    z-index:-1;
+    
+}  
+
+p{
+    z-index:2;
+    color: beige;
+    position: relative;
+    top: 0px;
+    left: 350px;
+    font-size: 2rem;
+    font-weight: bold;
+
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 30%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(52, 51, 51, 0.8);
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 3rem;
+    z-index: 9999;
+    text-align: center;
+    
+}
+
+/* Your existing media query styles here */
+
+@media (max-width: 600px) {
+    /* Additional styles for smaller screens */
+    .popup {
+        display: block;
+        animation: fadeOut 2s ease-out;
+    }
+}
+
+
+    
+@media (max-width: 600px) {
+    .body{
+
+            
+            background: url('../images/Group 15.png') center/contain no-repeat fixed;   
+            height: 100vh;
+            overflow: hidden;
+            cursor: none;
+        
+    }
+    .level1{
+        
+       
+
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top:50px;
+        left:70%;
+        font-size: 2rem;
+        color: #EADDCA;
+        
+     
+     }
+     
+    .game-container {
+        top: 20%;
+        left: 20%; 
+        width:100px;
+
+        
+    }
+
+    .hole {
+        width: 70%; 
+        height: 50%; 
+    }
+
+
+    .mole,.scoremole {
+        width: 50%; 
+        height: 50%; 
+    }
+    #whac{
+        width: 20%; 
+        height: 10%; 
+    }
+    .container{
+        width:200px;
+    }
+    .box{
+        width: 150px;
+    }
+    .molehide{
+        width: 100px;
+    }
+    
+    h3 {
+       
+
+        top: 20%;
+        left: 12%;
+        color: #EADDCA;
+        font-size: 2rem;
+        font-weight: bold;
+    
+    }
+    #mobile{
+        display: none;
+    }
+    #timer{
+        top:13%;
+        left:80px;
+        font-size: 3rem;
+        width:30%;
+
+    }
+    
+
+}    
+
+
+     
+
+
+    
+   

@@ -1,0 +1,170 @@
+ @import url('https://fonts.googleapis.com/css2?family=Cabin&family=DM+Sans:opsz@9..40&family=Exo+2&family=Fascinate&family=Fredoka&family=Montserrat&family=Poppins:wght@200;400&family=Preahvihear&family=Work+Sans&display=swap');
+body {
+    font-family: Arial, sans-serif;
+    background-color: #765430;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('../images/Group\ 16.png') center/cover no-repeat;
+}
+
+.whacamole {
+    width: 40%;
+    height: auto;
+    position: absolute;
+    /* z-index: 2; */
+    top: 80px;
+    left: 450px;
+    animation: zoomInOut 3s infinite;
+}
+
+@keyframes zoomInOut {
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.2);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+}
+
+.login-container {
+    padding: 20px;
+    border-radius: 8px;
+    width: 400px;
+    position: relative;
+    top: 100px;
+    overflow: hidden;
+    height: 400px;
+    /* background-color: #064b08; */
+    z-index: 1;
+}
+
+.login-container::before {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 3px solid rgb(108, 106, 102);
+    box-sizing: border-box;
+    animation: borderAnimation 4s linear infinite;
+    z-index: -1;
+}
+
+.loginbackground {
+    position: absolute;
+    z-index: -1;
+    width: 400px;
+}
+
+@keyframes borderAnimation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+.login-container h2 {
+    text-align: center;
+    color: #e3e3e3;
+    font-size: 2.5rem;
+    margin-bottom: 20px; 
+    font-family:'Montserrat', sans-serif;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    margin-top: 20px; 
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    margin-bottom: 8px;
+    padding: 25px;
+    color: #a0a0a0;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-left: 10px;
+    font-family:'Montserrat', sans-serif;
+    font-weight: 900;
+    
+}
+
+.form-group input {
+    width: 75%; 
+    padding: 15px;
+    border: 2px solid #504f4f;
+    border-radius: 15px;
+    background-color:#EADDCA;
+    margin-top: 20px;
+    font-family:'Montserrat', sans-serif;
+    margin-left: 30px;
+    font-weight: 900;
+    
+}
+
+
+button{
+    display: inline-block;
+    padding: 15px;
+    border: 2px solid #504f4f;
+    border-radius: 15px;
+    background-color:#A0522D;
+    margin-top: 20px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 1.2rem;
+    cursor: pointer;
+    
+}
+
+
+ 
+@media (max-width:600px){
+    .whacamole {
+        width: 70%;
+        height: auto;
+        position: absolute;
+        top: 80px;
+        left: 55px;
+        animation: zoomInOut 3s infinite;
+    }
+    @keyframes zoomInOut {
+        0% {
+            opacity: 1;
+            transform: scale(0.8);
+        }
+        50% {
+            opacity: 1;
+            transform: scale(1.2);
+        }
+        100% {
+            opacity: 1;
+            transform: scale(0.8);
+        }
+    }
+    .login-container::before {
+        animation:none;
+        border: none;
+       
+    }
+    
+}

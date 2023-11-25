@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../loginpage/login.css">
+    <title>Login Page</title>
+</head>
+<body>
+    <img class="whacamole" src="../images/whacamole.png" alt="whacamole">  
+    <div class="login-container">
+        <h2>PLAYER DETAILS</h2>
+        <form class="login-form" action="#" method="post" onsubmit="return validateForm()">
+            <div class="form-group">
+                <label for="username">USERNAME:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="nickname">NICKNAME:</label>
+                <input type="text" id="nickname" name="nickname" required>
+            </div>
+            <div class="form-group">
+                <button  class="button"type="submit">LOGIN</button>
+               
+
+            </div>
+        </form>
+    </div>
+      
+    <script src="../music/music.js"></script> 
+    <script >
+                    
+            function validateForm() {
+                var username = document.getElementById("username").value;
+                var nickname = document.getElementById("nickname").value;
+
+                
+
+                // Store the name and nickname in local storage
+                localStorage.setItem("username", username);
+                localStorage.setItem("nickname", nickname);
+
+                // Redirect to game.html
+                location.href = "../instructions/instructions.html";
+
+
+                // Prevent form submission (not strictly necessary since we're redirecting)
+                return false;
+            }
+
+
+            // your-script.js
+
+            // Check if the nickname is present in local storage
+            var storedNickname = localStorage.getItem("nickname");
+
+            // Display the nickname in the HTML element with id "nicknameDisplay"
+            var nicknameDisplay = document.getElementById("nicknameDisplay");
+
+            if (storedNickname) {
+            nicknameDisplay.innerHTML = "PLAYER:" + storedNickname;
+            } else {
+            nicknameDisplay.innerHTML = "Nickname not found in local storage.";
+            }
+
+    </script>  
+</body>
+</html>
