@@ -179,7 +179,7 @@ p{
 
 }
 
-.popup {
+/* .popup {
     display: none;
     position: fixed;
     top: 30%;
@@ -193,17 +193,17 @@ p{
     z-index: 9999;
     text-align: center;
     
-}
+} */
 
 /* Your existing media query styles here */
 
-@media (max-width: 600px) {
+/* @media (max-width: 600px) {
     /* Additional styles for smaller screens */
-    .popup {
-        display: block;
+    /* .popup { */
+        /* display: block;
         animation: fadeOut 2s ease-out;
     }
-}
+} */ 
 
 
 
@@ -225,8 +225,8 @@ p{
         height: 100%;
         position: absolute;
         top:50px;
-        left:70%;
-        font-size: 2rem;
+        left:30%;
+        font-size: 1rem;
         color: #EADDCA;
         
      
@@ -280,8 +280,8 @@ p{
     #timer{
         top:13%;
         left:80px;
-        font-size: 3rem;
-        width:30%;
+        font-size: 2rem;
+        width:20%;
 
     }
     

@@ -4,12 +4,13 @@
 var time = 15;
 var timerId;
 let score = 0;
-// Add the following code to close the popup after 2 seconds
-document.addEventListener('DOMContentLoaded', function () {
-    setTimeout(function () {
-        document.getElementById('popup').style.display = 'none';
-    }, 2000);
-});
+
+// // Add the following code to close the popup after 2 seconds
+// document.addEventListener('DOMContentLoaded', function () {
+//     setTimeout(function () {
+//         document.getElementById('popup').style.display = 'none';
+//     }, 2000);
+// });
 
 
 function validateForm() {
