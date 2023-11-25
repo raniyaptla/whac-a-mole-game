@@ -62,11 +62,11 @@ function updateTimerDisplay() {
     timer.innerHTML = time;
 }
 
-// Call this function to reset the timer
-function resetTime() {
-    clearInterval(timerId);
-    startTimer();
-}
+// // Call this function to reset the timer
+// function resetTime() {
+//     clearInterval(timerId);
+//     startTimer();
+// }
 
 var timer = document.getElementById('timer');
 
