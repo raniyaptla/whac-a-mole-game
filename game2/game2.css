@@ -7,7 +7,7 @@
 
 
 body {
-   
+    
     height: 100vh;
     overflow: hidden;
     
@@ -178,8 +178,8 @@ p{
     font-weight: bold;
 
 }
-
-/* .popup {
+/* 
+.popup {
     display: none;
     position: fixed;
     top: 30%;
@@ -193,25 +193,24 @@ p{
     z-index: 9999;
     text-align: center;
     
-} */
+}
 
 /* Your existing media query styles here */
 
 /* @media (max-width: 600px) {
     /* Additional styles for smaller screens */
-    /* .popup { */
-        /* display: block;
+    /* .popup {
+        display: block;
         animation: fadeOut 2s ease-out;
-    }
-} */ 
-
+    /* } */
 
 
     
 @media (max-width: 600px) {
     .body{
-       
-            background: url('../images/Group 15.png') center/cover no-repeat fixed;   
+
+            
+            background: url('../images/Group 15.png') center/contain no-repeat fixed;   
             height: 100vh;
             overflow: hidden;
             cursor: none;
@@ -265,12 +264,10 @@ p{
     }
     
     h3 {
-       
-
-        top: 20%;
-        left: 12%;
+        top: 10%;
+        left: 70%;
         color: #EADDCA;
-        font-size: 2rem;
+        font-size: 1rem;
         font-weight: bold;
     
     }
