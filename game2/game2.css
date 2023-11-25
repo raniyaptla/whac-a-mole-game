@@ -11,7 +11,7 @@ body {
     height: 100vh;
     overflow: hidden;
     
-    cursor: none;
+    cursor: crosshair;
     background: url('../images/Group 15.png') center/cover no-repeat fixed;   
     
     
