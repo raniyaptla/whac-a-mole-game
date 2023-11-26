@@ -75,7 +75,6 @@ var timer = document.getElementById('timer');
 
 startTimer();
 
-
 const moleClickSound = new Audio('../sound/mole.mp3');
 const scoreUpdateSound = new Audio('../sound/scoremole.mp3');
 

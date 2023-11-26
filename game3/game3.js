@@ -63,7 +63,7 @@ function updateTimerDisplay() {
     timer.innerHTML = time;
 }
 
-// // Call this function to reset the timer
+// //  function to reset the timer
 // function resetTime() {
 //     clearInterval(timerId);
 //     startTimer();
@@ -72,7 +72,6 @@ function updateTimerDisplay() {
 var timer = document.getElementById('timer');
 
 startTimer();
-
 
 const moleClickSound = new Audio('../sound/mole.mp3');
 const scoreUpdateSound = new Audio('../sound/scoremole.mp3');
