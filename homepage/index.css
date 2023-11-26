@@ -83,21 +83,21 @@
     
 @media (max-width: 600px) {
     .whacamole {
-        width: 90%; /* Adjust as needed */
+        width: 90%; 
         top:250px;
         left:27px;
         
     }
 
     .play {
-        left: 30%; /* Adjust as needed */
+        left: 30%; 
         transform: translateZ(-30%);
     }
 
 
     .logo {
         height: 100vh;
-         /* Adjust as needed */
+         
          object-fit: cover;
          overflow: hidden;
     }
