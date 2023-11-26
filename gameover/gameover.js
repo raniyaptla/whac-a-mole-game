@@ -7,7 +7,7 @@ var playAgainButton=document.getElementById("play-again-button");
 
 scoreBoard.innerHTML=score;
 
-// Assuming you have an HTML element with the id "home-button"
+
 var homeButton = document.getElementById("home-button");
 
 homeButton.onclick = (evt) => {
@@ -41,19 +41,19 @@ playAgainButton.onclick = (evt) => {
     "Congratulations! You're a Whac-a-Mole champion!",
     "You nailed it! Victory is yours!",
     "Well done! You smashed those moles like a pro!",
-    // Add more winning phrases as needed
+   
   ];
   
   var losingPhrases = [
     "Better luck next time!",
     "Oops! Don't worry, you'll get them next round.",
     "Keep trying! You'll conquer the moles soon.",
-    // Add more losing phrases as needed
+    
   ];
   
   // Function to get a random phrase based on the score and update HTML
   function updateGameResultHTML(score) {
-    var resultElement = document.getElementById("message-box"); // Change "result" to the actual ID of your HTML element
+    var resultElement = document.getElementById("message-box"); 
     
   
     // Select a random phrase based on the score
@@ -65,7 +65,7 @@ playAgainButton.onclick = (evt) => {
     
       
     } else {
-      // Handle the case when the score is less than 10
+      
       randomPhrase = "Try again! You can do better!";
     }
   
