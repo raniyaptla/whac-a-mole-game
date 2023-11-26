@@ -10,7 +10,7 @@
 .logo {
     width: 100%;
     height:auto;
-    background-size: cover;
+    background-size:contain;
     position:fixed;
     z-index: 1;
     
@@ -23,8 +23,8 @@
     
     position: absolute;
     z-index: 2;
-    top:150px;
-    left:330px;
+    top:20vh;
+    left:50vh;
     animation: anime .5s linear forwards,floating ease 4s infinite;
     
 }
@@ -34,8 +34,8 @@
     cursor: pointer;
     position: absolute;
     z-index: 2;
-    top:550px;
-    left:650px;
+    top:60vh;
+    left:80vh;
     transition: transform 0.3s ease; 
 
     
@@ -83,21 +83,21 @@
     
 @media (max-width: 600px) {
     .whacamole {
-        width: 90%; /* Adjust as needed */
+        width: 90%; 
         top:250px;
         left:27px;
         
     }
 
     .play {
-        left: 30%; /* Adjust as needed */
+        left: 30%; 
         transform: translateZ(-30%);
     }
 
 
     .logo {
         height: 100vh;
-         /* Adjust as needed */
+         
          object-fit: cover;
          overflow: hidden;
     }

@@ -10,7 +10,7 @@
 .logo {
     width: 100%;
     height:auto;
-    background-size: cover;
+    background-size: contain;
     position:fixed;
     z-index: 1;
     
@@ -22,7 +22,7 @@
     cursor: pointer;
     position:fixed;
     z-index: 2;
-    top:100px;
+    top:30%;
     left:250px;
     transition: transform 0.3s ease; 
     
@@ -32,8 +32,8 @@
 }
 .instructions{
     position:absolute;
-    top:220px;
-    left:350px;
+    top:50%;
+    left:25%;
     z-index: 3;
     align-items: center;
     justify-content: center;
@@ -47,15 +47,15 @@
 }
 .headinginstruction{
     position:absolute;
-    top:150px;
-    left:480px;
+    top:38%;
+    left:33%;
     z-index: 3;
     align-items: center;
     justify-content: center;
     text-align: center;
     margin:50px;
     padding: 50px;
-    font-size: 3rem;
+    font-size: 3.5rem;
     color: 	#EADDCA;
     font-weight:700;
 }
@@ -96,23 +96,22 @@
     
 }
 
-/* Style for the container */
 .level-container {
     display: flex;
-    justify-content: center; /* Adjust as needed to position the images */
+    justify-content: center; 
     
-    height: 100vh; /* Adjust the height as needed */
-    background-image: url('../images/Group\ 16.png'); /* Replace with the path to your background image */
-    background-size: cover;
-    background-position: center;
+    height: 100vh; 
+    background-image: url('../images/Group\ 16.png'); 
+    /* background-size: cover; */
+    background-position: center; 
   }
   
-  /* Style for each level image */
 .level {
-    width: 200px; /* Adjust as needed for the desired size */
+    width: 200px; 
     height: auto;
     
-    margin: 680px 0 0 0px; /* Adjust the margin as needed (top right bottom left) */
+    margin:  30% 20%;
+
     transition: transform 0.3s ease;
    
   }
@@ -149,7 +148,7 @@
         
     }
     .level{
-        width: 100px; /* Adjust as needed for the desired size */
+        width: 100px; 
         height: auto;
         
 

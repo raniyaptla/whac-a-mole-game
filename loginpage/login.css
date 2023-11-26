@@ -16,8 +16,8 @@ body {
     height: auto;
     position: absolute;
     /* z-index: 2; */
-    top: 80px;
-    left: 450px;
+    top: 10vh;
+    left: 53vh;
     animation: zoomInOut 3s infinite;
 }
 

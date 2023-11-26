@@ -57,8 +57,8 @@ ul{
 
 .level1{
    position: absolute;
-   top: 180px;
-   left: 1310px;
+   top: 20vh;
+   right: 6vh;
    color: #EADDCA;
    font-size: 2rem;
    font-weight: bold;
@@ -84,9 +84,8 @@ ul{
 }
 
 .game-container{
-    position: relative;
-    top:190px;
-    left:300px;
+    top:20vh;
+    left:25vw;
     position: fixed;
 }
 

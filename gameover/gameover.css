@@ -19,8 +19,8 @@ body{
     height: auto;
     position: absolute;
     /* z-index: 2; */
-    top: 80px;
-    left: 590px;
+    top: 10vh;
+    left:40vw;
     animation: zoomInOut 3s infinite;
 }
 
@@ -45,8 +45,8 @@ body{
 #play-again-button{
     
    position: absolute;
-   top:550px;
-   left: 660px;
+   top: 80vh;
+   left: 45vw;
    height: 18%;
    width: 10%;
    animation: scorebump 3s infinite;
@@ -60,8 +60,8 @@ body{
     border: 1px solid rgba(245, 245, 220, 0.683);
     width: 22%;
     position: absolute;
-    top: 450px;
-    left: 590px;
+    top: 70vh;
+    left: 40vw;
     font-size: 3rem;
     text-align: center;
     padding: 10px;
@@ -87,7 +87,7 @@ body{
     /* border: 3px solid beige; */
     width: 100%;
     position: absolute;
-    top:320px;
+    top:50vh;
     font-size: 3rem;
     text-align: center;
     padding: 10px;
@@ -128,8 +128,8 @@ body{
 
 .home{
     position: absolute;
-    top:50px;
-    left: 1320px;
+    top:10vh;
+    right:10vh;
     width: 8%;
     
 
