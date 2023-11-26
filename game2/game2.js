@@ -24,11 +24,11 @@ function validateForm() {
     // Redirect to game.html
     window.location.href = "../instructions/instruction.html";
 
-    // Prevent form submission (not strictly necessary since we're redirecting)
+    // Prevent form submission 
     return false;
 }
 
-// your-script.js
+
 
 // Check if the nickname is present in local storage
 var storedNickname = localStorage.getItem("nickname");
@@ -75,7 +75,7 @@ var timer = document.getElementById('timer');
 
 startTimer();
 
-// Define Audio objects for the sounds
+//  Audio objects for the sounds
 const moleClickSound = new Audio('../sound/mole.mp3');
 const scoreUpdateSound = new Audio('../sound/scoremole.mp3');
 
